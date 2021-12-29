@@ -1,0 +1,56 @@
+.selector {
+  cursor: pointer;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  opacity: 0;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 800;
+  font-style: italic;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.gradient {
+  cursor: text;
+  resize: none;
+  object-fit: fill;
+  height: 40px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.cancel {
+  cursor: auto;
+}
+
+@media print {
+  .hide_4_print {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.panningDisabled {
+  /* this will be used in objects that are draggable (not the canvas) */
+}
+
+.wheelDisabled {
+  /* this will be used in objects that are draggable (not the canvas) */
+}
+
+.boundWindow {
+  /* this will be used to determine the boundaries of the elements on the canvas */
+}

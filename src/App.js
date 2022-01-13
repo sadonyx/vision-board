@@ -1,7 +1,7 @@
-import "./App.css";
-import ImgHandler from "./ImgHandler";
-import ColorProvider from "./ColorContext";
-import TextProvider from "./TextContext";
+import "./styles/App.css";
+import ImgHandler from "./components/ImgHandler";
+import ColorProvider from "./context/ColorContext";
+import TextProvider from "./context/TextContext";
 
 function App() {
   return (

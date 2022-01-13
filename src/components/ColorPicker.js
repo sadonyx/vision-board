@@ -5,7 +5,10 @@ import { useEffect, useState } from "react/cjs/react.development";
 import { ChakraProvider, Box } from "@chakra-ui/react";
 
 //Components
-import { useColorContext, useColorUpdateContext } from "./ColorContext";
+import {
+  useColorContext,
+  useColorUpdateContext,
+} from "../context/ColorContext";
 
 const ColorPicker = ({ eyedrop_rgb, eyedrop_hex }) => {
   const { selectedColor } = useColorContext();

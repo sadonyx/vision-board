@@ -3,7 +3,7 @@ import { useState } from "react";
 import { RiGradienterFill } from "react-icons/ri";
 
 //Chakra UI
-import "./Handler.css";
+import "../styles/Handler.css";
 import { ChakraProvider, Box, Button } from "@chakra-ui/react";
 
 const RenderImages = ({ source, getChosenImage, getHoveredImage }) => {

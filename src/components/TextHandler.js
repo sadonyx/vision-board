@@ -2,14 +2,14 @@ import { Rnd } from "react-rnd";
 import { EditText } from "react-edit-text";
 
 //Chakra UI
-import "./Handler.css";
+import "../styles/Handler.css";
 import { ChakraProvider, Button, Text } from "@chakra-ui/react";
 
 //Icons
 import { CgColorBucket } from "react-icons/cg";
 
 //Components
-import { useTextContext, useTextUpdateContext } from "./TextContext";
+import { useTextContext, useTextUpdateContext } from "../context/TextContext";
 import { useEffect } from "react/cjs/react.development";
 
 const TextHandler = () => {

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import useWindowDimensions from "./useWindowDimensions";
+import useWindowDimensions from "../util/useWindowDimensions";
 import { nanoid } from "nanoid";
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import { usePalette } from "color-thief-react";
 
 //Styling
-import "./Handler.css";
+import "../styles/Handler.css";
 import { ChakraProvider, Box, Button } from "@chakra-ui/react";
 
 //Icons
@@ -18,9 +18,12 @@ import { CgColorBucket } from "react-icons/cg";
 import RenderImages from "./ImgRender";
 import PaletteHandler from "./PaletteRender";
 import EyeDrop from "./Eyedropper";
-import { useColorContext, useColorUpdateContext } from "./ColorContext";
+import {
+  useColorContext,
+  useColorUpdateContext,
+} from "../context/ColorContext";
 import TextHandler from "./TextHandler";
-import { useTextUpdateContext } from "./TextContext";
+import { useTextUpdateContext } from "../context/TextContext";
 
 const ImgHandler = () => {
   const [selectedImages, setSelectedImages] = useState([]);

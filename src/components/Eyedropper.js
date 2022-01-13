@@ -5,12 +5,12 @@ import { useEffect, useState } from "react/cjs/react.development";
 import { CgColorPicker } from "react-icons/cg";
 
 //Styling
-import "./Handler.css";
+import "../styles/Handler.css";
 import { ChakraProvider, Box, Button, Flex, Spacer } from "@chakra-ui/react";
 
 //Components
 import ColorPicker from "./ColorPicker";
-import { useColorUpdateContext } from "./ColorContext";
+import { useColorUpdateContext } from "../context/ColorContext";
 
 const EyeDrop = ({ imageHover }) => {
   const [eyedropState, setEyedropState] = useState({

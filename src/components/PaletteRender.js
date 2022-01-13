@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Gradient } from "react-gradient";
 
 //Styling
-import "./Handler.css";
+import "../styles/Handler.css";
 import { ChakraProvider, Circle, Spacer, Flex, Box } from "@chakra-ui/react";
 
 //Context
-import { useColorUpdateContext } from "./ColorContext";
+import { useColorUpdateContext } from "../context/ColorContext";
 
 const PaletteHandler = ({ color_object, retrieveSwatch }) => {
   const [selectedSwatch, setSelectedSwatch] = useState({});

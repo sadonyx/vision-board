@@ -51,7 +51,7 @@ const ColorPicker = ({ eyedrop_rgb, eyedrop_hex }) => {
       });
       handleEyedropColor(eyedrop_rgb, eyedrop_hex);
     }
-  }, [eyedrop_rgb]);
+  }, [eyedrop_rgb, eyedrop_hex, color.rgb, handleEyedropColor]);
 
   return (
     <ChakraProvider>

@@ -21,7 +21,7 @@ const EyeDrop = ({ imageHover }) => {
 
   const { handleEyedropColor } = useColorUpdateContext();
 
-  const { eyedropOnce, image } = eyedropState;
+  const { eyedropOnce } = eyedropState;
   const { rgb, hex } = eyedropState.pickedColor;
 
   const handleChangeColor = ({ rgb, hex }) => {
@@ -31,20 +31,20 @@ const EyeDrop = ({ imageHover }) => {
     handleEyedropColor(rgb, hex);
   };
 
-  const toggleOnce = () => {
-    setEyedropState((prev) => {
-      return {
-        ...prev,
-        eyedropOnce: !eyedropState.eyedropOnce,
-      };
-    });
-  };
+  // const toggleOnce = () => {
+  //   setEyedropState((prev) => {
+  //     return {
+  //       ...prev,
+  //       eyedropOnce: !eyedropState.eyedropOnce,
+  //     };
+  //   });
+  // };
 
   useEffect(() => {
     setEyedropState((prev) => {
       return { ...prev, imageHover };
     });
-  }, [image]);
+  }, [imageHover]);
 
   return (
     <ChakraProvider>

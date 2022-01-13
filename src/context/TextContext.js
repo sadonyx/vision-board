@@ -57,25 +57,25 @@ const TextProvider = ({ children }) => {
     });
   };
 
-  const handleChangeTextColor = (text_object) => {
-    let selectedText = text_object;
+  // const handleChangeTextColor = (text_object) => {
+  //   let selectedText = text_object;
 
-    setState((prev) => {
-      return [
-        prev.filter((obj) => {
-          return obj.id !== selectedText.id;
-        }),
-        {
-          id: selectedText.id,
-          content: selectedText.content,
-          fontSize: selectedText.fontSize,
-          readOnly: selectedText.readOnly,
-          changeTextColor: !selectedText.changeTextColor,
-          color: selectedText.color,
-        },
-      ];
-    });
-  };
+  //   setState((prev) => {
+  //     return [
+  //       prev.filter((obj) => {
+  //         return obj.id !== selectedText.id;
+  //       }),
+  //       {
+  //         id: selectedText.id,
+  //         content: selectedText.content,
+  //         fontSize: selectedText.fontSize,
+  //         readOnly: selectedText.readOnly,
+  //         changeTextColor: !selectedText.changeTextColor,
+  //         color: selectedText.color,
+  //       },
+  //     ];
+  //   });
+  // };
 
   const handleTextColor = (text_object) => {
     let selectedText = text_object;

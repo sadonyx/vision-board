@@ -3,18 +3,17 @@ import { EditText } from "react-edit-text";
 
 //Chakra UI
 import "../styles/Handler.css";
-import { ChakraProvider, Button, Text } from "@chakra-ui/react";
+import { ChakraProvider, Button } from "@chakra-ui/react";
 
 //Icons
 import { CgColorBucket } from "react-icons/cg";
 
 //Components
 import { useTextContext, useTextUpdateContext } from "../context/TextContext";
-import { useEffect } from "react/cjs/react.development";
 
 const TextHandler = () => {
   const { state } = useTextContext();
-  const { handleEditText, handleTextColor } = useTextUpdateContext();
+  const { handleTextColor } = useTextUpdateContext();
 
   // const getFocus = (id) => {
   //   document.getElementById(id).focus();

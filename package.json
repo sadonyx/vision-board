@@ -1,6 +1,6 @@
 {
   "name": "vision-board",
-  "homepage": "https://github.com/sadonyx/vision-board",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

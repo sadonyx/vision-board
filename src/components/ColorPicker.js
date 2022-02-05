@@ -1,5 +1,5 @@
 import { SketchPicker } from "react-color";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 
 //Styling
 import { ChakraProvider, Box } from "@chakra-ui/react";

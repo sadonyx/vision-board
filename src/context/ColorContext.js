@@ -1,5 +1,5 @@
 import { useContext, useState, createContext } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 
 const ColorContext = createContext();
 const ColorUpdateContext = createContext();

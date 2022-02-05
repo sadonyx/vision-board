@@ -1,5 +1,5 @@
 import { EyeDropper } from "react-eyedrop";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 
 //Icons
 import { CgColorPicker } from "react-icons/cg";
